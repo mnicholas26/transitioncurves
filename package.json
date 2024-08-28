@@ -1,0 +1,13 @@
+{
+    "name": "transitioncurves",
+    "version": "0.0.1",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [],
+    "author": "mnicholas26",
+    "license": "UNLICENSED",
+    "description": "Sandbox to play with and output a quantised and normalised bezier curve useful for simple transition effects",
+    "devDependencies": {
+        "typescript": "^5.5.4"
+    }
+}
