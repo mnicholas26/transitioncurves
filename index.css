@@ -8,3 +8,120 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
+
+#svgwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+svg {
+    width: calc(100% - 80px);
+    /* background-color: darkorange; */
+    fill: none;
+    stroke: black;
+    user-select: none;
+    max-height: 100%;
+}
+
+#curve {
+    stroke-width: 5px;
+}
+
+#curveThicc {
+    stroke-width: 18px;
+    stroke: rgba(0, 0, 0, 0);
+    cursor: crosshair;
+}
+
+#grid {
+    stroke: darkslategrey;
+}
+
+#axis {
+    stroke-width: 2px;
+}
+
+svg circle {
+    fill: navy;
+    cursor: pointer;
+}
+
+svg circle:nth-child(odd) {
+    fill: rgb(3, 46, 3);
+}
+
+svg text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif; */
+}
+
+#guideLinesGroup {
+    stroke-width: 4px;
+    stroke: rgb(7, 7, 70);
+    stroke-dasharray: 13px 7px;
+}
+
+#guideLinesGroup line:nth-child(odd) {
+    stroke: rgb(3, 32, 3);
+}
+
+#guideRails {
+    display: none;
+}
+
+#guideRails.visible {
+    display: initial;
+}
+
+#guideRails line {
+    stroke-width: 2px;
+    stroke-dasharray: 14px 6px;
+    stroke: rgba(95, 95, 236, 0.7);
+}
+
+#guideRails text {
+    font-size: larger;
+    fill: rgb(95, 95, 236);
+    stroke: rgb(95, 95, 236);
+}
+
+#anchorLabel {
+    font-size: x-large;
+    fill: navy;
+    stroke: navy;
+    display: none;
+}
+
+#anchorLabel[variant='odd'] {
+    fill: rgb(3, 46, 3);
+    stroke: rgb(3, 46, 3);
+}
+
+#anchorLabel[variant='line'] {
+    fill: rgb(95, 90, 90);
+    stroke: rgb(95, 90, 90);
+}
+
+#anchorLabel.visible {
+    display: initial;
+}
+
+#anchorLabelBackground {
+    fill: rgba(255, 255, 255, 0.7);
+    stroke: none;
+    display: none;
+}
+
+#anchorLabelBackground.visible {
+    display: initial;
+}
+
+#optionsBanner {
+    height: 100%;
+    width: 400px;
+    background-color: yellow;
+}
